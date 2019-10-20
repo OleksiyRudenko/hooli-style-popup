@@ -13,7 +13,7 @@ are the phishing pages.
 So I took the kaziengami's project and changed it
 to make different mocks for the task.  
 
-[Demo](https://oleksiyrudenko.github.io/hooli-style-popup/) 
+[Demo](https://oleksiyrudenko.github.io/hooli-style-popup/index.html) 
 
 1. `npm install` to install dependencies 
 1. `npm run dev` to run the app in development mode  
