@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prod": "parcel build src/index.html --public-url ./",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build src/index.html --public-url ./",
+    "publish": "push-dir --dir=dist --branch=gh-pages"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,8 @@
     "cssnano": "^4.1.8",
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-url-loader": "^1.2.6",
-    "sass": "^1.16.1"
+    "push-dir": "^0.4.1",
+    "sass": "^1.16.1",
+    "shx": "^0.3.2"
   }
 }
